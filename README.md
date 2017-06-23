@@ -7,7 +7,7 @@ MacOS Sierra: Version 10.12.5
 
 ## Overview
 
-Sample project has next file:
+Project has next files:
 
 ```
 /server.ts
@@ -16,10 +16,39 @@ Sample project has next file:
 /client/tsconfig.json
 ```
 
-Server use `lib: ["es2015"]` and `"types": ["node"]`.
-Client use `lib: ["dom"]` and `types: []`.
+```ts
+// server.ts
+typeof window;
+typeof global;
+```
 
-1) Clone repo `gti clone https://github.com/mctep/vs-code-tsconfig-bug.git`
+```json
+// tsconfig.json
+{
+  "compilerOptions": {
+    "lib": ["es2015"],
+    "types": ["node"]
+  }
+}
+```
+
+```ts
+// client/client.ts
+typeof window;
+typeof global;
+```
+
+```json
+// client/tsconfig.json
+{
+  "compilerOptions": {
+    "lib": ["dom"],
+    "types": []
+  }
+}
+```
+
+1) Clone repo `git clone https://github.com/mctep/vs-code-tsconfig-bug.git`
 2) Install packages `cd vs-code-tsconfig-bug && npm i`
 
 ## Case 1
