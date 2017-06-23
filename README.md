@@ -1,6 +1,10 @@
 # vs-code-tsconfig-bug
 Reproduce bug with multiple tsconfig.json in VSCode
 
+VSCode: Version 1.13.1
+
+MacOS Sierra: Version 10.12.5
+
 ## Overview
 
 Sample project has next file:
